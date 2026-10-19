@@ -393,7 +393,7 @@ describe('Accessibility: EvidenceUploadPreflight — transfer states', () => {
     );
     const retryButton = screen.getByRole('button', { name: /retry/i });
     retryButton.click();
-    expect(onRetry).toH`aveBeenCalledTimes(1);
+    expect(onRetry).toHaveBeenCalledTimes(1);
     await assertAccessible(container);
   });
 });
