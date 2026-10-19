@@ -30,3 +30,15 @@ export type GovernanceSurfaceState =
 
 /** Mutation-capable composition states per FRONTEND_IMPLEMENTATION_MATRIX.md. */
 export type GovernanceMutationState =
+  | 'idle'
+  | 'validating'
+  | 'awaiting-signature'
+  | 'rejected'
+  | 'submitted'
+  | 'replaced'
+  | 'reverted'
+  | 'confirmed'
+  | 'finalized'
+  | 'projection-lag'
+  | 'reorged'
+  | 'unavailable';

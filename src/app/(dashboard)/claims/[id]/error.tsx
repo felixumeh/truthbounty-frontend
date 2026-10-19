@@ -25,5 +25,5 @@ export default function ClaimDetailError({
     console.error('Claim detail route error:', error);
   }, [error]);
 
-  return <RouteErrorFallback error=error reset={reset} scope="Claim detail" />;
+  return <RouteErrorFallback error={error} reset={reset} scope="Claim detail" />;
 }
